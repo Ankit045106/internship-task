@@ -1,0 +1,747 @@
+/* Media Queries for different devices */
+
+/* Media Queries */
+@media only screen and (max-width: 767px) {
+    html
+    {
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 1;
+        font-size: 55%;
+    }
+    }
+      
+    
+
+
+
+/* ===========================Global CSS=========================== */
+:root {
+    --prmColor: #8064A2;
+    --searchBarColor: #EBEDF0;
+    --searchBarHoverColor: #F8F9FA;
+    --placeholdercolor: #939CA3;
+}
+
+
+/* Global CSS Ends Here */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ========================= NavBar Starts Here ========================= */
+.headerNavBarContainer {
+    display: flex;
+    align-items: center;
+    flex-shrink: 1;
+    width: 1440px;
+    height: 80px;
+    margin-bottom: 6px;
+    background-color: grey/white;
+}
+
+/* 1.Logo */
+#hobbyCueLogo {
+    width: 293.25px;
+    height: 60px;
+    margin: 10px 0 10px 97px;
+}
+
+/* 2.Search Bar */
+.searchBarContainer {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 20px 34.74px;
+}
+
+#searchBar {
+    width: 300px;
+    height: 40px;
+    padding: 12px;
+    background-color: var(--searchBarColor);
+    border-radius: 8px;
+    border-style: none;
+    font-size: 12px;
+}
+
+#searchBar:hover {
+    background-color: var(--searchBarHoverColor);
+}
+
+#searchIconContainer {
+    background-color: var(--prmColor);
+    width: 40px;
+    height: 40px;
+    border-radius: 0px 8px 8px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#searchIcon {
+    color: #FFFFFF;
+    width: 16px;
+    height: 16px;
+}
+
+/* 3. Nav Bar Text Buttons */
+#navBarContainer {
+    width: 561.8px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    margin: 28px 0 28px 90px;
+}
+
+#exploreIcon {
+    width: 24px;
+    height: 24px;
+}
+
+.btn {
+    background-color: transparent;
+    color: black;
+    border-style: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#exploreBtn {
+    margin: 29px 24px 29px 0;
+}
+
+/* 4. Icons Collection */
+#iconCollections {
+    display: flex;
+    align-items: center;
+    margin: 28px 24px 28px 24px;
+}
+
+.iconsNavBar {
+    margin: 0 24px 0 0;
+}
+
+/* 5. Sign In Button */
+#signInBtn {
+    padding: 10px 32px;
+    border: 2px solid var(--prmColor);
+    border-radius: 8px;
+    color: var(--prmColor);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* =========================Nav Bar Ends Here========================= */
+
+
+/* =========================Section Starts Here========================= */
+
+/* First Section */
+
+#sectionContainer {
+    width: 1540px;
+    height: 678px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F7F5F9;
+
+}
+
+/* 1.Heading */
+#firstSection {
+    width: 707px;
+    height: 578px;
+    margin: 100px 0 0 100px;
+}
+
+#headingContainer {
+    margin: 0 186px 32px 0;
+}
+
+#headingTitle {
+    width: 580px;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 600;
+    letter-spacing: 0.72px;
+}
+
+#hobbyText {
+    color: #0096C8;
+}
+
+#passionText {
+    color: var(--prmColor);
+}
+
+/* 2. Paragraphs */
+#paraContainer {
+    margin-bottom: 80px;
+}
+
+.sectionParas {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.28px;
+    color: black;
+}
+
+.para1 {
+    margin-bottom: 16px;
+}
+
+.para2 {
+    margin-bottom: 116px;
+}
+
+/* ======================Second section starts here====================== */
+
+
+/* 1. Sign In & Join In */
+#secondsection {
+    margin: 103px 100px 141px 124px;
+    height: 450px;
+}
+
+#dataContainer {
+    display: flex;
+    margin-bottom: 32px;
+}
+
+.DataBtns {
+    font-size: 20px;
+    font-weight: 600;
+    border-style: none;
+}
+
+#signIn {
+    margin-right: 16px;
+}
+
+#formSignInBtn {
+    color: var(--prmColor);
+    border-bottom: 2px solid var(--prmColor);
+}
+
+.DataBtns:hover {
+    background-color: #eaeaea;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#joinIn {
+    margin-left: 16px;
+}
+
+#formJoinInBtn {
+    color: var(--placeholdercolor);
+}
+
+/* 2. Google & facebook Sign In/Join In */
+.smData {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.signInIcon {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 28px;
+    left: 24px;
+}
+
+#signInGoogleButton {
+    border-radius: 8px;
+    border: 1px solid var(--prmColor);
+    background-color: var(--searchBarHoverColor);
+    height: 40px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+}
+
+#signInGoogleButton a {
+    text-decoration: none;
+}
+
+#signInFacebookButton {
+    border-radius: 8px;
+    border: 1px solid var(--prmColor);
+    background-color: var(--searchBarHoverColor);
+    height: 40px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+}
+
+#signInFacebookButton a {
+    text-decoration: none;
+}
+
+/* 3. Or Connect With */
+#hrContainer {
+    width: 410px;
+    height: 16px;
+    position: relative;
+    margin: 12px 0 16px 0;
+}
+
+#hrCont1 {
+    width: 165px;
+    height: 2px;
+    left: 0px;
+    top: 8px;
+    position: absolute;
+    background: #CED4DA;
+}
+
+#hrCont2 {
+    width: 165px;
+    height: 2px;
+    left: 295px;
+    top: 8px;
+    position: absolute;
+    background: #CED4DA;
+}
+
+#hrCont3 {
+    position: absolute;
+    left: 185px;
+    top: 0px;
+    color: black;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+}
+
+/* 4. Form Details */
+#Sign_JoinInForm {
+    display: flex;
+    flex-direction: column;
+    margin: 12px 0 16px 0;
+}
+
+#EmailId {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    height: 40px;
+    gap: 10px;
+    margin-bottom: 16px;
+    border-style: none;
+    border-radius: 8px;
+}
+
+#Password {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    height: 40px;
+    gap: 10px;
+    border-style: none;
+    border-radius: 8px;
+}
+
+#show_password {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    bottom: 28px;
+    left: 440px;
+    color: gray;
+}
+
+/* 5. Form checkbox */
+.form-check {
+    display: flex;
+    align-items: center;
+    margin: 12px 0;
+}
+
+#forget_password {
+    margin-left: 186.64px;
+    text-decoration: none;
+    color: black;
+}
+
+#AgreeandContinueBtn>button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 12px 172px;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid black;
+    background-color: #F7F5F9;
+}
+
+/* ==============================Second Sections Ends Here============================== */
+
+
+/* ==============================Third Section Starts Here============================== */
+
+#third_section_container {
+    width: 1440px;
+    height: 825px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 60px;
+}
+
+.fourboxes {
+    display: flex;
+    flex-wrap: wrap;
+    width: 608px;
+    height: 297px;
+    border-radius: 8px;
+    background: #FFF;
+}
+
+#box1 {
+    border: 2px solid #8064A2;
+    margin: 100px 12px 12px 100px;
+}
+
+#box1:hover {
+    background-color: #8064A2;
+}
+
+#box2 {
+    border: 2px solid #77933C;
+    margin: 100px 100px 12px 12px;
+}
+
+#box2:hover {
+    background-color: #77933C;
+}
+
+#box3 {
+    border: 1px solid #C0504D;
+    margin: 12px 12px 100px 100px;
+}
+
+#box3:hover {
+    background-color: #C0504D;
+}
+
+#box4 {
+    border: 1px solid #0096C8;
+    margin: 12px 100px 100px 12px;
+}
+
+#box4:hover {
+    background-color: #0096C8;
+}
+
+.boxes_icons {
+    width: 40px;
+    height: 40px;
+    margin: 40px 12px 12px 44px;
+}
+
+.boxes_heading {
+    width: 83px;
+    height: 36px;
+    margin: 42px 0 12px 12px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.boxes_para {
+    width: 520px;
+    height: 81px;
+    margin: 12px 44px 32px 44px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.boxes_btn {
+    padding: 12px 30px;
+    margin: 0 0 40px 44px;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid var(--prmColor, #8064A2);
+    color: var(--prmColor);
+}
+
+/*  Third Section Ends Here */
+
+
+/* Fourth Section Starts Here */
+#fourth_section {
+    background-color: #F7FDFF;
+    width: 1540px;
+    height: 484px;
+}
+
+#fourth_section_container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1340px;
+    height: 284px;
+    margin: 100px;
+    background-color: white;
+}
+
+#box5_heading {
+    width: 168px;
+    height: 36px;
+    margin: 42px 0 34px 24px;
+}
+
+#box5_para {
+    width: 1100px;
+    color: #08090A;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0.36px;
+    margin: 0 40px 32px 40px;
+}
+
+#box5_btn {
+    padding: 12px 30px;
+    margin: 0 0 40px 44px;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid var(--prmColor, #8064A2);
+    color: var(--prmColor);
+}
+
+/* Fourth Section Ends Here */
+
+
+/* Fifth Section Starts Here */
+#fifth_section {
+    width: 1540px;
+}
+
+#fifth_section_container {
+    margin: 100px 150px;
+    background-color: #F7F5F9;
+    width: 1240px;
+    height: 472px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#box6_quote_icon {
+    width: 40px;
+    height: 40px;
+    margin: 40px 12px 16px 40px;
+}
+
+#box6_heading {
+    width: 157px;
+    height: 36px;
+    margin: 42px 0 16px 12px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#box6_para {
+    width: 1160;
+    height: 180px;
+    margin: 16px 40px 20px 40px;
+    color: var(--grey-darker, #6D747A);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0.36px;
+}
+
+#audio_container {
+    background-color: #CCC1DA;
+    margin: 20px 0 40px 40px;
+    width: 776px;
+    height: 100px;
+}
+
+#ellipse_24 {
+    width: 40px;
+    height: 40px;
+    margin: 30px 40px 30px 32px;
+}
+
+#play_arrow_black_24dp {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    right: 75px;
+}
+
+#audio_img {
+    width: 60px;
+    height: 60px;
+    margin-left: 510px;
+}
+
+#mic_icon {
+    position: relative;
+    right: 78px;
+    top: 12px;
+
+}
+#audio_id
+{
+    position: relative;
+    left: 30px;
+    bottom: 75px;
+    width: 500px;
+}
+#ellipse_img
+{
+    width: 100px;
+    height: 100px;
+    margin: 20px 24px 40px 80px;
+}
+#ellipse_h4
+{
+    position: relative;
+    top: 30px;
+    color: var(--prmColor);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.36px;
+}
+#ellipse_para
+{
+    position: relative;
+    bottom: 100px;
+    left: 1020px;
+    color: #0096C8;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.28px;
+}
+
+/* Fifth Section Ends Here */
+
+
+/* Sixth Section Starts here */
+#sixth_section {
+    margin-top: 100px;
+}
+
+#sixth_section_container {
+    height: 692px;
+    display: flex;
+    flex-direction: column;
+}
+
+#headingTitle6 {
+    margin: 100px 775px 30px 100px;
+    width: 580px;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 600;
+    letter-spacing: 0.72px;
+}
+
+#box6_btn {
+    width: 147px;
+    height: 46px;
+    margin: 0 0 121px 100px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border-style: none;
+    background: var(--prmColor);
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#group_img {
+    margin-left: 100px;
+}
+
+/* Sixth Section Ends Here */
+
+
+/* Footer Starts Here */
+#footer_container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 60px 102px 60px 51px;
+}
+
+.footer_headers {
+    margin: 0 102px 0 51px;
+}
+
+.footer_headings {
+    text-align: center;
+    color: #08090A;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0.07px;
+
+}
+.fh1
+{
+    display: flex;
+    align-items: flex-start;
+}
+ul li {
+    list-style-type: none;
+    color: #08090A;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.07px;
+    margin-bottom: 8px;
+}
+.footer_sm_icons
+{
+    width: 24px;
+    height: 24px;
+    margin: 16px 12px 50px 12px;
+}
+#ffie
+{
+    width: 360px;
+    height: 40px;
+}
+#invite_btn
+{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0.06px;
+    width: 59px;
+    height: 40px;
+    border-style: none;
+    border-radius: 0px 8px 8px 0px;
+    background: var(--prmColor);
+    position: relative;
+    bottom: 3px;
+    right: 5px;
+}
+#copyright_claim
+{
+    margin: 82px 0 0 615px;
+}

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Responsive Web Design</title>
+
+    <!-- =========================================================== Bootstrap CSS =========================================================== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Normal CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ====================== Nav Bar====================== -->
+    <header>
+        <div class="headerNavBarContainer">
+            <!-- Logo Container -->
+            <div class="logoContainer">
+                <img src="./images/HobbyCue Logo.png" alt="HobbyCue" id="hobbyCueLogo">
+            </div>
+            <!-- Search Bar Container -->
+            <div class="searchBarContainer">
+                <input type="search" name="searchBar" id="searchBar" placeholder="Search Here">
+                <!-- Search Icon -->
+                <div id="searchIconContainer">
+                    <img src="./icons/icons8_search 1.svg" alt="searchIcon" id="searchIcon">
+                </div>
+            </div>
+            <!-- NavBar Text Content -->
+            <div id="navBarContainer">
+                <!-- Explore Icons -->
+                <div class="navBarIcons">
+                    <img src="./icons/Explore.svg" alt="exploreIcon" id="exploreIcon">
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false" id="exploreBtn">
+                        Explore
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">People - Community</a></li>
+                        <li><a class="dropdown-item" href="#">Places - Venues</a></li>
+                        <li><a class="dropdown-item" href="#">Programs - Events</a></li>
+                        <li><a class="dropdown-item" href="#">Products - Store</a></li>
+                        <li><a class="dropdown-item" href="#">Blogs</a></li>
+                    </ul>
+                </div>
+                <!-- Hobbies Icons -->
+                <div class="navBarIcons">
+                    <img src="./icons/Hobbies.svg" alt="hobbiesIcon" id="hobbiesIcon">
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Hobbies
+                    </button>
+                </div>
+
+
+                <!-- Icons Collection -->
+                <div id="iconCollections">
+                    <div class="iconsNavBar">
+                        <img src="./icons/Bookmark.svg" alt="bookmark">
+                    </div>
+                    <div class="iconsNavBar">
+                        <img src="./icons/notifications_bell.svg" alt="bell">
+                    </div>
+                    <div class="iconsNavBar">
+                        <img src="./icons/Product 3.svg" alt="cart">
+                    </div>
+                </div>
+
+
+                <!-- Sign In Button -->
+                <div id="navBarBtn">
+                    <button type="button" id="signInBtn">Sign In</button>
+                </div>
+            </div>
+    </header>
+
+
+    <!-- =========================Section Bar========================= -->
+    <!-- First Sectuion -->
+    <section>
+        <div id="sectionContainer">
+            <div id="firstSection">
+                <div id="headingContainer">
+                    <h3 id="headingTitle">Explore your <span id="hobbyText">hobby</span> or <span
+                            id="passionText">passion</span></h3>
+                </div>
+                <div id="paraContainer">
+                    <p class="sectionParas para1">Sign-in to interact with a community of fellow hobbyists and an
+                        eco-system of experts, teachers, suppliers, classes, workshops, and places to practice,
+                        participate or perform. Your hobby may be about visual or performing arts, sports, games,
+                        gardening, model making, cooking, indoor or outdoor activities…
+                    </p>
+                    <p class="sectionParas para2">If you are an expert or a seller, you can Add your Listing and promote
+                        yourself, your students, products, services or events. Hop on your hobbyhorse and enjoy the
+                        ride.</p>
+                </div>
+                <div id="vectorImageContainer">
+                    <img src="./images/Group 27.png" alt="group_image" id="vectorImage">
+                </div>
+            </div>
+            <!-- First Section Ends Here -->
+
+            <!-- Second Section Starts Here -->
+            <!-- Sign In/Join In Form -->
+            <section id="secondsection">
+                <div id="dataContainer">
+                    <div id="signIn">
+                        <button type="button" class="DataBtns" id="formSignInBtn">Sign In</button>
+                    </div>
+                    <div id="joinIn">
+                        <button type="button" class="DataBtns" id="formJoinInBtn">Join In</button>
+                    </div>
+                </div>
+                <div id="signInWithGoogle" class="smData">
+                    <img src="./icons/google_icon.svg" alt="google_icon" class="signInIcon">
+                    <button type="button" id="signInGoogleButton"><a href="#">Continue with Google</a></button>
+                </div>
+                <div id="signInWithFacebook" class="smData">
+                    <img src="./icons/Facebook.svg" alt="facebook_icon" class="signInIcon">
+                    <button type="button" id="signInFacebookButton"><a href="https://www.facebook.com">Continue with
+                            Facebook</a></button>
+                </div>
+                <div id="hrContainer">
+                    <div id="hrCont1"></div>
+                    <div id="hrCont2"></div>
+                    <div id="hrCont3">Or connect with</div>
+                </div>
+
+                <!-- Form Details -->
+                <form action="" id="Sign_JoinInForm">
+                    <input type="email" name="Email" id="EmailId" placeholder="Email">
+                    <input type="password" name="Password" id="Password" placeholder="Password">
+                    <img src="./icons/Eye Off.svg" alt="show_password" id="show_password">
+                    <div class="form-check">
+                        <input class="form-check-input form-check" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label form-check" for="flexCheckDefault">
+                            Remember me
+                        </label>
+
+                        <a href="" id="forget_password">Forget password?</a>
+                    </div>
+
+                    <!-- Agree and Continue Button -->
+                    <div id="AgreeandContinueBtn">
+                        <button type="button">Continue</button>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Third Section Starts Here -->
+            <section id="third_section">
+                <div id="third_section_container">
+                    <div class="fourboxes" id="box1">
+                        <img src="./icons/People.svg" alt="people_icon" class="boxes_icons">
+                        <h4 id="box1_heading" class="boxes_heading">People</h4>
+                        <p id="box1_para" class="boxes_para">Find a teacher, coach, or expert for your hobby interest in
+                            your locality. Find a partner, teammate, accompanist or collaborator.</p>
+                        <button type="button" class="boxes_btn box1_btn">Connect</button>
+                    </div>
+                    <div class="fourboxes" id="box2">
+                        <img src="./icons/Place.svg" alt="place_icon" class="boxes_icons">
+                        <h4 id="box2_heading" class="boxes_heading">Place</h4>
+                        <p id="box2_para" class="boxes_para">Find a class, school, playground, auditorium, studio, shop
+                            or an event venue. Book a slot at venues that allow booking through hobbycue.</p>
+                        <button type="button" class="boxes_btn box2_btn">Meet up</button>
+                    </div>
+                    <div class="fourboxes" id="box3">
+                        <img src="./icons/Product.svg" alt="product_icon" class="boxes_icons">
+                        <h4 id="box3_heading" class="boxes_heading">Product</h4>
+                        <p id="box3_para" class="boxes_para">Find equipment or supplies required for your hobby. Buy,
+                            rent or borrow from shops, online stores or from community members.</p>
+                        <button type="button" class="boxes_btn box3_btn">Get it</button>
+                    </div>
+                    <div class="fourboxes" id="box4">
+                        <img src="./icons/Program.svg" alt="program_icon" class="boxes_icons">
+                        <h4 id="box4_heading" class="boxes_heading">Program</h4>
+                        <p id="box4_para" class="boxes_para">Find events, meetups and workshops related to your hobby.
+                            Register or buy tickets online.</p>
+                        <button type="button" class="boxes_btn box4_btn">Attend</button>
+                    </div>
+                </div>
+            </section>
+            <!-- Third section ends here -->
+
+
+            <!-- Fourth Section Starts here -->
+            <section id="fourth_section">
+                <div id="fourth_section_container">
+                    <img src="./icons/Add (Landing Page).svg" alt="add Landing_page" class="boxes_icons">
+                    <h4 id="box5_heading">Add your own</h4>
+                    <p id="box5_para">Are you a teacher or expert? Do you sell or rent out equipment, venue or event
+                        tickets? Or, you know someone who should be on hobbycue? Go ahead and Add your Own page</p>
+                    <button type="button" id="box5_btn">Add new</button>
+                </div>
+            </section>
+            <!-- Fourth Section Ends Here -->
+
+            <!-- Fifth Section starts Here -->
+            <section id="fifth_section">
+                <div id="fifth_section_container">
+                    <img src="./icons/quote.svg" alt="quote_icon" id="box6_quote_icon">
+                    <h4 id="box6_heading">Testimonials</h4>
+                    <p id="box6_para">In a fast growing and ever changing city like Bangalore, it sometimes becomes very
+                        difficult to find or connect with like minded people. Websites like hobbycue.com is a great
+                        service which helps me get in touch with, communicate, connect, and exchange ideas with other
+                        dancers. It also provides the extra benefit of finding products and services that I can avail,
+                        which I can be assured is going to be of great quality as it comes recommended by people of the
+                        hobbycue community. To have discussions, to get visibility, and to be able to safely explore
+                        various hobbies and activities in my city, all under one roof, is an excellent idea and I highly
+                        recommend it.</p>
+                    <div id="audio_container">
+                        <img src="./icons/Ellipse 24.svg" alt="ellipse_24" id="ellipse_24">
+                        <img src="./icons/play_arrow_black_24dp 1.svg" alt="play_arrow_black_24dp" id="play_arrow_black_24dp">
+                        <img src="./images/Ellipse 26.png" alt="ellipse_26" id="audio_img">
+                        <img src="./icons/mic_black_24dp 1.svg" alt="mic_icon" id="mic_icon">
+                        <audio src="./audio01.mp3" controls id="audio_id"></audio>
+                    </div>
+                    <img src="./images/Ellipse 12.png" alt="ellipse_img" id="ellipse_img">
+                    <h4 id="ellipse_h4">Shubha Nagarajan</h4>
+                    <p id="ellipse_para">Classical Dancer</p>
+                </div>
+            </section>
+            <!-- Fifth Section Ends Here -->
+
+
+            <!-- Sixth Section Starts Here -->
+            <section id="sixth_section">
+                <div id="sixth_section_container">
+                    <h3 id="headingTitle6">Your <span id="passionText">Hobby</span>, Your<span
+                            id="hobbyText"> Community</span></h3>
+                    <button type="button" id="box6_btn">Get Started</button>
+                    <img src="./images/Group 99.png" alt="" id="group_img">
+                </div>
+            </section>
+            <!-- Sixth Section Ends Here -->
+            <!-- Footer Starts Here -->
+            <footer id="footer">
+                <div id="footer_container">
+                    <div class="footer_headers">
+                        <h5 class="footer_headings">Hobbycue</h5>
+                        <ul>
+                            <li>About US</li>
+                            <li>Our Services</li>
+                            <li>Work with Us</li>
+                            <li>FAQ</li>
+                            <li>Contact Us</li>
+                        </ul>
+                    </div>
+                    <div class="footer_headers">
+                        <h5 class="footer_headings">How Do I</h5>
+                        <ul>
+                            <li>Sign Up</li>
+                            <li>Add a Listing</li>
+                            <li>Claim Listing</li>
+                            <li>Post a Query</li>
+                            <li>Add a Blog Post</li>
+                            <li>Other Queries</li>
+                        </ul>
+                    </div>
+                    <div class="footer_headers">
+                        <h5 class="footer_headings">Quick Links</h5>
+                        <ul>
+                            <li>Listings</li>
+                            <li>Blog Posts</li>
+                            <li>Shop / Store</li>
+                            <li>Community</li>
+                        </ul>
+                    </div>
+                    <div class="footer_headers">
+                        <h5 class="footer_headings fh1">Social Media</h5>
+                        <div id="social_media_container">
+                            <img src="./icons/104498_facebook_icon 1.svg" alt="facebook_icon" class="footer_sm_icons">
+                            <img src="./icons/5296514_bird_tweet_twitter_twitter logo_icon 3.svg" alt="twitter_icon" class="footer_sm_icons">
+                            <img src="./icons/5335781_camera_instagram_social media_instagram logo_icon 1.svg" alt="instagram_icon" class="footer_sm_icons">
+                            <img src="./icons/5279116_pin_pinterest_inspiration_pinterest logo_icon 1.svg" alt="pintrest_icon" class="footer_sm_icons">
+                            <img src="./icons/843777_google_google+_plus_icon 1.svg" alt="google_icon" class="footer_sm_icons">
+                            <img src="./icons/4375133_logo_youtube_icon 1.svg" alt="youtube_icon" class="footer_sm_icons">
+                            <img src="./icons/4375108_logo_telegram_icon 1.svg" alt="telegram_icon" class="footer_sm_icons">
+                            <img src="./icons/1564504_email_letter_mail_message_icon 1.svg" alt="emai_icon" class="footer_sm_icons">
+                        </div>
+                            <h5 class="footer_headings fh1">Invite Friends</h5>
+                            <form action="">
+                                <input type="email" placeholder="Email Id" name="emailId" id="ffie">
+                                <button type="button" id="invite_btn">Invite</button>
+                            </form>
+                    </div>
+                    <div id="copyright_claim"> &#169; Purple Cues Private Limited</div>
+                </div>
+            </footer>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <========================================================= Bootstrap Javascript =========================================================> -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
